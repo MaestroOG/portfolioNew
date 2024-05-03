@@ -1,0 +1,78 @@
+#mywork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.mywork-title {
+    position: relative;
+}
+
+.mywork-title h1 {
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.mywork-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.mywork-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.mywork-container img {
+    width: 419px;
+    height: 280px;
+    transition: 0.3s;
+    cursor: pointer;
+    aspect-ratio: 16 / 9;
+    border-radius: 19px;
+}
+
+.mywork-container img:hover {
+    scale: 1.09;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.mywork-showmore {
+    display: flex;
+    gap: 10px;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: .6s ease;
+    cursor: pointer;
+}
+
+.mywork-showmore:hover {
+    gap: 19px;
+    transition: .6s;
+}
+
+@media (max-width: 960px) {
+    #mywork {
+        margin: 40px;
+    }
+
+    .mywork-title h1 {
+        font-size: 43px;
+    }
+
+    .mywork-container {
+        grid-template-columns: 1fr;
+    }
+}
