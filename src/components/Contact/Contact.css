@@ -80,7 +80,7 @@
 
 .contact-right input {
     border: none;
-    max-width: 700px;
+    width: 700px;
     height: 78px;
     padding-left: 20px;
     border-radius: 4px;
@@ -131,8 +131,8 @@
         align-items: center;
     }
 
-    /* .contact-right input,
+    .contact-right input,
     .contact-right textarea {
-        width: 370px;
-    } */
+        max-width: 700px;
+    }
 }
